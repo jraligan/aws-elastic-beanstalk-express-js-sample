@@ -2,9 +2,7 @@ pipeline {
 	agent {
 		docker {
 			image 'node:16-alpine'
-			args '-u root'
-			alwaysPull false
-			reuseNode true
+			args '-u admin'
 		}
 	}
 	stages {
